@@ -5,5 +5,8 @@ $serif: 'Crimson Text', Georgia, Cambria, 'Times New Roman', Times, serif;
 $f-serif: $serif;
 $header-sans-serif: $sans-serif;
 
+// Homepage
+$homepage-bg-image: url('/static/scpd/images/stanford-pano.jpg');
+
 // Import defaults
 @import 'lms/static/sass/partials/base/_variables.scss';
