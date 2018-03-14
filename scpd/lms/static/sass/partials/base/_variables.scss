@@ -1,3 +1,99 @@
+// Colors - primary
+$cardinal-red: rgb(140,21,21);
+$white: rgb(255,255,255);
+$cool-gray: rgb(77,79,83);
+$black: rgb(46,45,41);
+// Colors - primary
+$bright-red: rgb(177,4,14);
+$dark-red: rgb(130,0,0);
+$bright-blue: rgb(0,108,184);
+$blue: rgb(0,84,143);
+$chocolate: rgb(47,36,36);
+$stone: rgb(84,73,72);
+$fog: rgb(244,244,244);
+$light-sandstone: rgb(249,246,239);
+$sandstone: rgb(210,194,149);
+$warm-gray: rgb(63,60,48);
+$beige: rgb(157,149,115);
+$light-sage: rgb(199,209,197);
+$clay: rgb(95,87,79);
+$cloud: rgb(218,215,203);
+$driftwood: rgb(182,177,169);
+$sandhill: rgb(179,153,93);
+$palo-alto: rgb(23,94,84);
+$teal: rgb(0,80,92);
+$purple: rgb(83,40,79);
+$redwood: rgb(141,60,30);
+$brown: rgb(94,48,50);
+$sky: rgb(0,152,219);
+$lagunita: rgb(0,124,146);
+$mint: rgb(0,155,118);
+$gold: rgb(178,111,22);
+$sun: rgb(234,171,0);
+$poppy: rgb(233,131,0);
+// Colors - main overrides
+$black: $black;
+$white: $white;
+$gray: $stone;
+$yellow: tint($sun, 85%);
+$red: $bright-red;
+$green: $mint;
+$blue: $sky;
+$orange: $sun;
+// Colors - uxpl overrides
+$uxpl-blue-base: $cardinal-red;
+$uxpl-blue-hover-active: $bright-red;
+$uxpl-green-base: $palo-alto;
+$uxpl-green-hover-active: $mint;
+$uxpl-pink-base: adjust-hue($bright-red, -30);
+$uxpl-grayscale-x-back: $fog;
+// Colors - system-feedback overrides
+$error-color: $bright-red;
+$warning-color: $sun;
+$confirm-color: $mint;
+$active-color: $sky;
+$highlight-color: tint($sun, 50%);
+$alert-color: $bright-red;
+$success-color: $mint;
+$success-color-hover: $palo-alto;
+// Colors - action - primary
+$action-primary-bg: $cardinal-red;
+$action-primary-fg: $fog;
+$action-primary-shadow: $dark-red;
+$action-primary-focused-bg: $cardinal-red;
+$action-primary-focused-fg: $fog;
+$action-primary-active-bg: $bright-red;
+$action-primary-active-fg: $cardinal-red;
+$action-primary-active-shadow: $dark-red;
+$action-primary-active-focused-fg: $bright-red;
+$action-primary-active-focused-shadow: $dark-red;
+$action-primary-disabled-bg: $sandstone;
+$action-prmary-disabled-fg: $light-sandstone;
+// Colors - actions - misc
+$link-color: $lagunita;
+$link-hover: $lagunita;
+$site-status-color: $redwood;
+$button-color: $cardinal-red;
+$button-archive-color: $light-sandstone;
+// Colors - edx deprecated
+$m-blue: $cardinal-red;  // uxpl blue base
+$m-blue-l1: tint($m-blue,45%);
+$m-blue-l2: tint($m-blue,65%);
+$m-blue-l3: tint($m-blue,80%);
+$m-blue-l4: tint($m-blue,90%);
+$m-blue-l5: tint($m-blue,95%);
+$m-blue-l6: tint($m-blue,97%);
+$m-blue-d1: shade($m-blue,5%);
+$m-blue-d2: shade($m-blue,10%);
+$m-blue-d3: shade($m-blue,15%);
+$m-blue-d4: shade($m-blue,20%);
+$m-blue-d5: shade($m-blue,35%);
+$m-blue-d6: shade($m-blue,50%);
+$m-blue-t0: rgba($m-blue,0.125) !default;
+$m-blue-t1: rgba($m-blue,0.25) !default;
+$m-blue-t2: rgba($m-blue,0.50) !default;
+$m-blue-t3: rgba($m-blue,0.75) !default;
+
 // Fonts
 $sans-serif: 'Source Sans Pro', Trebuchet, 'Helvetica Neue', Helvetica, $verdana, sans-serif;
 $f-sans-serif: $sans-serif;
@@ -7,6 +103,13 @@ $header-sans-serif: $sans-serif;
 
 // Homepage
 $homepage-bg-image: url('/static/scpd/images/stanford-pano.jpg');
+
+// Header
+$header-bg: tint($cloud, 50%);
+$header-border-color: $cardinal-red;
+
+// Footer
+$footer-bg: tint($cloud, 50%);
 
 // Import defaults
 @import 'lms/static/sass/partials/base/_variables.scss';
