@@ -71,7 +71,7 @@ $action-primary-disabled-bg: $sandstone;
 $action-prmary-disabled-fg: $light-sandstone;
 // Colors - actions - misc
 $link-color: $lagunita;
-$link-hover: $lagunita;
+$link-hover: shade($lagunita, 50%);
 $site-status-color: $redwood;
 $button-color: $cardinal-red;
 $button-archive-color: $light-sandstone;
@@ -103,13 +103,14 @@ $header-sans-serif: $sans-serif;
 
 // Homepage
 $homepage-bg-image: url('/static/scpd/images/stanford-pano.jpg');
+$body-bg: $fog;
 
 // Header
-$header-bg: tint($cloud, 50%);
+$header-bg: tint($cloud, 75%);
 $header-border-color: $cardinal-red;
 
 // Footer
-$footer-bg: tint($cloud, 50%);
+$footer-bg: tint($cloud, 75%);
 
 // Import defaults
 @import 'lms/static/sass/partials/base/_variables.scss';
