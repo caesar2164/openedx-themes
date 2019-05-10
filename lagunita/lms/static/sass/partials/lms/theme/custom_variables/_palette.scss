@@ -32,3 +32,9 @@ $mint: rgb(0, 155, 118);
 $gold: rgb(178, 111, 22);
 $sun: rgb(234, 171, 0);
 $poppy: rgb(233, 131, 0);
+
+// Colors - modifications
+//$palo-alto-dark: rgb(11, 47, 41); // darkened 50%
+$palo-alto-dark: shade($palo-alto, 50%);
+//$light-sage-light: rgb(232, 236, 231); // lightened 60%
+$light-sage-light: tint($light-sage, 60%);
